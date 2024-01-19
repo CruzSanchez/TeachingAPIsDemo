@@ -15,7 +15,7 @@ _No request body required for this endpoint._
 
 #### Response
 
-```json
+```yaml
 [
     {
         'Id': 1,
@@ -54,7 +54,7 @@ _No request body required for this endpoint._
 
 #### Response
 
-```json
+```yaml
 {
     'Id': 1
 	'Title': 'Sample Book Title'
@@ -83,7 +83,7 @@ _No request body required for this endpoint._
 
 #### Response
 
-```json
+```yaml
 {
     'Id': 34
 	'Title': 'The Random Book Title'
@@ -108,7 +108,7 @@ _No request body required for this endpoint._
 
 #### Request Example
 
-```json
+```yaml
 {
     'Title': 'Example Book Title'
 	'Description': 'Example Description'
@@ -120,7 +120,7 @@ _No request body required for this endpoint._
 
 #### Response
 
-```json
+```yaml
 {
     'Id': 1
 	'Title': 'Sample Book Title'
@@ -144,7 +144,7 @@ _No request body required for this endpoint._
 
 #### Request Example
 
-```json
+```yaml
 {
     'Title': 'Example Book Title'
 	'Description': 'Example Description'
@@ -156,7 +156,7 @@ _No request body required for this endpoint._
 
 #### Response
 
-```json
+```yaml
 {
     'Id': 1
 	'Title': 'Sample Book Title'
@@ -185,7 +185,7 @@ _No request body required for this endpoint._
 
 #### Response
 
-```json
+```yaml
 {
     'Id': 1
 	'Title': 'Sample Book Title'
@@ -213,7 +213,7 @@ _No request body required for this endpoint._
 
 #### Response
 
-```json
+```yaml
 [
     {
         'Id': 1
@@ -254,7 +254,7 @@ _No request body required for this endpoint._
 
 #### Response
 
-```json
+```yaml
 {
     'Id': 45
 	'Name': 'The Random Sample Dog's Name'
@@ -284,7 +284,7 @@ _No request body required for this endpoint._
 
 #### Response
 
-```json
+```yaml
 {
     'Id': 1
 	'Name': 'Sample Dog Name'
@@ -311,7 +311,7 @@ _No request body required for this endpoint._
 
 #### Request Example
 
-```json
+```yaml
 {
     'Name': 'Example Dog Name'
 	'Owner': 'Example Owner'
@@ -326,7 +326,7 @@ _No request body required for this endpoint._
 
 #### Response
 
-```json
+```yaml
 {
     'Name': 'Example Dog Name'
 	'Owner': 'Example Owner'
@@ -352,7 +352,7 @@ _No request body required for this endpoint._
 
 #### Request Example
 
-```json
+```yaml
 {
     'Name': 'Example Dog Name'
 	'Owner': 'Example Owner'
@@ -367,7 +367,7 @@ _No request body required for this endpoint._
 
 #### Response
 
-```json
+```yaml
 {
     'Name': 'Example Dog Name'
 	'Owner': 'Example Owner'
@@ -398,7 +398,7 @@ _No request body required for this endpoint._
 
 #### Response
 
-```json
+```yaml
 {
     'Id': 1
 	'Name': 'Sample Dog Name'
