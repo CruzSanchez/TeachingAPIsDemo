@@ -61,6 +61,12 @@ app.MapPost("/book", ([FromBody] Book book) =>
     return TypedResults.Ok(book);
 });
 
+app.MapPost("/books/reset", () =>
+{
+    BookDatabase.ResetData();
+    return TypedResults.Ok(Books);
+});
+
 app.MapPut("/book/{id}", (int id, [FromBody] Book book) =>
 {
     if (book is null)
@@ -116,6 +122,12 @@ app.MapPost("/dog", ([FromBody] Dog dog) =>
     Dogs.Add(dog);
 
     return TypedResults.Ok(dog);
+});
+
+app.MapPost("/dogs/reset", () =>
+{
+    DogDatabase.ResetData();
+    return TypedResults.Ok(Dogs);
 });
 
 app.MapPut("/dog/{id}", (int id, [FromBody] Dog dog) =>

@@ -17,5 +17,14 @@ namespace TeachingAPIsDemo.Data
                 WriteIndented = true
             }) ?? new List<Book>();
         }
+
+        public static void ResetData()
+        {
+            var jsonData = File.ReadAllText("Data/Backups/Books.json");
+
+            File.WriteAllText("Data/Books.json", jsonData);
+
+            BringForthTheBooks();
+        }
     }
 }

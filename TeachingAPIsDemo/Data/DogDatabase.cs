@@ -17,5 +17,14 @@ namespace TeachingAPIsDemo.Data
                 WriteIndented = true
             }) ?? new List<Dog>();
         }
+
+        internal static void ResetData()
+        {
+            var jsonData = File.ReadAllText("Data/Backups/Dogs.json");
+
+            File.WriteAllText("Data/Dogs.json", jsonData);
+
+            BringForthTheDogs();
+        }
     }
 }
