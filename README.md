@@ -19,18 +19,18 @@ _No request body required for this endpoint._
 [
     {
         'Id': 1,
-        'Title': 'Sample Book Title'
-	    'Description': 'Sample Description'
-	    'Author': 'Sample Author'
-	    'CreatedDate': '2023-01-01'
+        'Title': 'Sample Book Title',
+	    'Description': 'Sample Description',
+	    'Author': 'Sample Author',
+	    'CreatedDate': '2023-01-01',
 	    'Genre': 'Sample Genre'
     },
     {
-        'Id': 2
-	    'Title': 'Sample Book Title'
-	    'Description': 'Sample Description'
-	    'Author': 'Sample Author'
-	    'CreatedDate': '2023-01-01'
+        'Id': 2,
+	    'Title': 'Sample Book Title',
+	    'Description': 'Sample Description',
+	    'Author': 'Sample Author',
+	    'CreatedDate': '2023-01-01',
 	    'Genre': 'Sample Genre'
     }
 ]
@@ -56,11 +56,11 @@ _No request body required for this endpoint._
 
 ```yaml
 {
-    'Id': 1
-	'Title': 'Sample Book Title'
-	'Description': 'Sample Description'
-	'Author': 'Sample Author'
-	'CreatedDate': '2023-01-01'
+    'Id': 1,
+	'Title': 'Sample Book Title',
+	'Description': 'Sample Description',
+	'Author': 'Sample Author',
+	'CreatedDate': '2023-01-01',
 	'Genre': 'Sample Genre'
 }
 ```
@@ -85,11 +85,11 @@ _No request body required for this endpoint._
 
 ```yaml
 {
-    'Id': 34
-	'Title': 'The Random Book Title'
-	'Description': 'Sample Description'
-	'Author': 'Sample Author'
-	'CreatedDate': '2023-01-01'
+    'Id': 34,
+	'Title': 'The Random Book Title',
+	'Description': 'Sample Description',
+	'Author': 'Sample Author',
+	'CreatedDate': '2023-01-01',
 	'Genre': 'Sample Genre'
 }
 ```
@@ -110,10 +110,10 @@ _No request body required for this endpoint._
 
 ```yaml
 {
-    'Title': 'Example Book Title'
-	'Description': 'Example Description'
-	'Author': 'Example Author'
-	'CreatedDate': '2024-01-19'
+    'Title': 'Example Book Title',
+	'Description': 'Example Description',
+	'Author': 'Example Author',
+	'CreatedDate': '2024-01-19',
 	'Genre': 'Example Genre'
 }
 ```
@@ -123,10 +123,10 @@ _No request body required for this endpoint._
 ```yaml
 {
     'Id': 1
-	'Title': 'Sample Book Title'
-	'Description': 'Sample Description'
-	'Author': 'Sample Author'
-	'CreatedDate': '2024-01-19'
+	'Title': 'Sample Book Title',
+	'Description': 'Sample Description',
+	'Author': 'Sample Author',
+	'CreatedDate': '2024-01-19',
 	'Genre': 'Sample Genre'
 }
 ```
@@ -146,10 +146,10 @@ _No request body required for this endpoint._
 
 ```yaml
 {
-    'Title': 'Example Book Title'
-	'Description': 'Example Description'
-	'Author': 'Example Author'
-	'CreatedDate': '2024-01-19'
+    'Title': 'Example Book Title',
+	'Description': 'Example Description',
+	'Author': 'Example Author',
+	'CreatedDate': '2024-01-19',
 	'Genre': 'Example Genre'
 }
 ```
@@ -158,11 +158,11 @@ _No request body required for this endpoint._
 
 ```yaml
 {
-    'Id': 1
-	'Title': 'Sample Book Title'
-	'Description': 'Sample Description'
-	'Author': 'Sample Author'
-	'CreatedDate': '2024-01-19'
+    'Id': 1,
+	'Title': 'Sample Book Title',
+	'Description': 'Sample Description',
+	'Author': 'Sample Author',
+	'CreatedDate': '2024-01-19',
 	'Genre': 'Sample Genre'
 }
 ```
@@ -187,11 +187,11 @@ _No request body required for this endpoint._
 
 ```yaml
 {
-    'Id': 1
-	'Title': 'Sample Book Title'
-	'Description': 'Sample Description'
-	'Author': 'Sample Author'
-	'CreatedDate': '2023-01-01'
+    'Id': 1,
+	'Title': 'Sample Book Title',
+	'Description': 'Sample Description',
+	'Author': 'Sample Author',
+	'CreatedDate': '2023-01-01',
 	'Genre': 'Sample Genre'
 }
 ```
@@ -216,20 +216,20 @@ _No request body required for this endpoint._
 ```yaml
 [
     {
-        'Id': 1
-	    'Name': 'Sample Dog Name'
-	    'Owner': 'Sample Owner'
-	    'Breed': 'Sample Breed'
+        'Id': 1,
+	    'Name': 'Sample Dog Name',
+	    'Owner': 'Sample Owner',
+	    'Breed': 'Sample Breed',
 	    'Friends': [
             2,
             3
         ]
     },
     {
-        'Id': 2
-	    'Name': 'Sample Dog Name 2'
-	    'Owner': 'Sample Owner'
-	    'Breed': 'Sample Breed'
+        'Id': 2,
+	    'Name': 'Sample Dog Name 2',
+	    'Owner': 'Sample Owner',
+	    'Breed': 'Sample Breed',
 	    'Friends': [
             1,
             3
@@ -256,10 +256,10 @@ _No request body required for this endpoint._
 
 ```yaml
 {
-    'Id': 45
-	'Name': 'The Random Sample Dog's Name'
-	'Owner': 'Sample Owner'
-	'Breed': 'Sample Breed'
+    'Id': 45,
+	'Name': "The Random Sample Dog's Name",
+	'Owner': 'Sample Owner',
+	'Breed': 'Sample Breed',
 	'Friends': [
         2,
 	    3
@@ -286,10 +286,10 @@ _No request body required for this endpoint._
 
 ```yaml
 {
-    'Id': 1
-	'Name': 'Sample Dog Name'
-	'Owner': 'Sample Owner'
-	'Breed': 'Sample Breed'
+    'Id': 1,
+	'Name': 'Sample Dog Name',
+	'Owner': 'Sample Owner',
+	'Breed': 'Sample Breed',
 	'Friends': [
         2,
     	3
@@ -313,9 +313,9 @@ _No request body required for this endpoint._
 
 ```yaml
 {
-    'Name': 'Example Dog Name'
-	'Owner': 'Example Owner'
-	'Breed': 'Example Breed'
+    'Name': 'Example Dog Name',
+	'Owner': 'Example Owner',
+	'Breed': 'Example Breed',
 	'Friends': [
         2,
 	    3,
@@ -328,9 +328,9 @@ _No request body required for this endpoint._
 
 ```yaml
 {
-    'Name': 'Example Dog Name'
-	'Owner': 'Example Owner'
-	'Breed': 'Example Breed'
+    'Name': 'Example Dog Name',
+	'Owner': 'Example Owner',
+	'Breed': 'Example Breed',
 	'Friends': [
         2,
 	    3,
@@ -354,9 +354,9 @@ _No request body required for this endpoint._
 
 ```yaml
 {
-    'Name': 'Example Dog Name'
-	'Owner': 'Example Owner'
-	'Breed': 'Example Breed'
+    'Name': 'Example Dog Name',
+	'Owner': 'Example Owner',
+	'Breed': 'Example Breed',
 	'Friends': [
         2,
 	    3,
@@ -369,9 +369,9 @@ _No request body required for this endpoint._
 
 ```yaml
 {
-    'Name': 'Example Dog Name'
-	'Owner': 'Example Owner'
-	'Breed': 'Example Breed'
+    'Name': 'Example Dog Name',
+	'Owner': 'Example Owner',
+	'Breed': 'Example Breed',
 	'Friends': [
         2,
 	    3,
@@ -400,10 +400,10 @@ _No request body required for this endpoint._
 
 ```yaml
 {
-    'Id': 1
-	'Name': 'Sample Dog Name'
-	'Owner': 'Sample Owner'
-	'Breed': 'Sample Breed'
+    'Id': 1,
+	'Name': 'Sample Dog Name',
+	'Owner': 'Sample Owner',
+	'Breed': 'Sample Breed',
 	'Friends': [
         2,
 	    3
