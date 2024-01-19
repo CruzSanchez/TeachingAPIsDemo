@@ -4,6 +4,44 @@
 
 This document provides detailed information about the API endpoints defined in the Program.cs file of an ASP.NET Core application.
 
+### Get /books
+
+- **HTTP Method:** Get
+- **Path:** `/books`
+
+#### Request Example
+
+_No request body required for this endpoint._
+
+#### Response
+
+```json
+[
+    {
+        'Id': 1,
+        'Title': 'Sample Book Title'
+	    'Description': 'Sample Description'
+	    'Author': 'Sample Author'
+	    'CreatedDate': '2023-01-01'
+	    'Genre': 'Sample Genre'
+    },
+    {
+        'Id': 2
+	    'Title': 'Sample Book Title'
+	    'Description': 'Sample Description'
+	    'Author': 'Sample Author'
+	    'CreatedDate': '2023-01-01'
+	    'Genre': 'Sample Genre'
+    }
+]
+```
+
+#### Error Codes
+
+- **200 OK:** The request has succeeded.
+- **400 Bad Request:** The server could not understand the request due to invalid syntax.
+- **404 Not Found:** The server can not find the requested resource.
+
 ### Get /book/{id}
 
 - **HTTP Method:** Get
@@ -17,7 +55,14 @@ _No request body required for this endpoint._
 #### Response
 
 ```json
-{'Id': 1, 'Title': 'Sample Book Title', 'Description': 'Sample Description', 'Author': 'Sample Author', 'CreatedDate': '2023-01-01', 'Genre': 'Sample Genre'}
+{
+    'Id': 1
+	'Title': 'Sample Book Title'
+	'Description': 'Sample Description'
+	'Author': 'Sample Author'
+	'CreatedDate': '2023-01-01'
+	'Genre': 'Sample Genre'
+}
 ```
 
 #### Error Codes
@@ -26,26 +71,6 @@ _No request body required for this endpoint._
 - **400 Bad Request:** The server could not understand the request due to invalid syntax.
 - **404 Not Found:** The server can not find the requested resource.
 
-### Get /books
-
-- **HTTP Method:** Get
-- **Path:** `/books`
-
-#### Request Example
-
-_No request body required for this endpoint._
-
-#### Response
-
-```json
-[{'Id': 1, 'Title': 'Sample Book Title', 'Description': 'Sample Description', 'Author': 'Sample Author', 'CreatedDate': '2023-01-01', 'Genre': 'Sample Genre'},{'Id': 2, 'Title': 'Sample Book Title', 'Description': 'Sample Description', 'Author': 'Sample Author', 'CreatedDate': '2023-01-01', 'Genre': 'Sample Genre'}]
-```
-
-#### Error Codes
-
-- **200 OK:** The request has succeeded.
-- **400 Bad Request:** The server could not understand the request due to invalid syntax.
-- **404 Not Found:** The server can not find the requested resource.
 
 ### Get /book/random
 
@@ -59,7 +84,14 @@ _No request body required for this endpoint._
 #### Response
 
 ```json
-{'Id': 34, 'Title': 'The Random Book Title', 'Description': 'Sample Description', 'Author': 'Sample Author', 'CreatedDate': '2023-01-01', 'Genre': 'Sample Genre'}
+{
+    'Id': 34
+	'Title': 'The Random Book Title'
+	'Description': 'Sample Description'
+	'Author': 'Sample Author'
+	'CreatedDate': '2023-01-01'
+	'Genre': 'Sample Genre'
+}
 ```
 
 #### Error Codes
@@ -77,13 +109,26 @@ _No request body required for this endpoint._
 #### Request Example
 
 ```json
-{'Title': 'Example Book Title', 'Description': 'Example Description', 'Author': 'Example Author', 'CreatedDate': '2024-01-19', 'Genre': 'Example Genre'}
+{
+    'Title': 'Example Book Title'
+	'Description': 'Example Description'
+	'Author': 'Example Author'
+	'CreatedDate': '2024-01-19'
+	'Genre': 'Example Genre'
+}
 ```
 
 #### Response
 
 ```json
-{'Id': 1, 'Title': 'Sample Book Title', 'Description': 'Sample Description', 'Author': 'Sample Author', 'CreatedDate': '2024-01-19', 'Genre': 'Sample Genre'}
+{
+    'Id': 1
+	'Title': 'Sample Book Title'
+	'Description': 'Sample Description'
+	'Author': 'Sample Author'
+	'CreatedDate': '2024-01-19'
+	'Genre': 'Sample Genre'
+}
 ```
 
 #### Error Codes
@@ -100,13 +145,26 @@ _No request body required for this endpoint._
 #### Request Example
 
 ```json
-{'Title': 'Example Book Title', 'Description': 'Example Description', 'Author': 'Example Author', 'CreatedDate': '2024-01-19', 'Genre': 'Example Genre'}
+{
+    'Title': 'Example Book Title'
+	'Description': 'Example Description'
+	'Author': 'Example Author'
+	'CreatedDate': '2024-01-19'
+	'Genre': 'Example Genre'
+}
 ```
 
 #### Response
 
 ```json
-{'Id': 1, 'Title': 'Sample Book Title', 'Description': 'Sample Description', 'Author': 'Sample Author', 'CreatedDate': '2024-01-19', 'Genre': 'Sample Genre'}
+{
+    'Id': 1
+	'Title': 'Sample Book Title'
+	'Description': 'Sample Description'
+	'Author': 'Sample Author'
+	'CreatedDate': '2024-01-19'
+	'Genre': 'Sample Genre'
+}
 ```
 
 #### Error Codes
@@ -128,7 +186,14 @@ _No request body required for this endpoint._
 #### Response
 
 ```json
-{'Id': 1, 'Title': 'Sample Book Title', 'Description': 'Sample Description', 'Author': 'Sample Author', 'CreatedDate': '2023-01-01', 'Genre': 'Sample Genre'}
+{
+    'Id': 1
+	'Title': 'Sample Book Title'
+	'Description': 'Sample Description'
+	'Author': 'Sample Author'
+	'CreatedDate': '2023-01-01'
+	'Genre': 'Sample Genre'
+}
 ```
 
 #### Error Codes
@@ -149,7 +214,28 @@ _No request body required for this endpoint._
 #### Response
 
 ```json
-[{'Id': 1, 'Name': 'Sample Dog Name', 'Owner': 'Sample Owner', 'Breed': 'Sample Breed', 'Friends': [2, 3]},{'Id': 2, 'Name': 'Sample Dog Name2', 'Owner': 'Sample Owner', 'Breed': 'Sample Breed', 'Friends': [1, 3]}]
+[
+    {
+        'Id': 1
+	    'Name': 'Sample Dog Name'
+	    'Owner': 'Sample Owner'
+	    'Breed': 'Sample Breed'
+	    'Friends': [
+            2,
+            3
+        ]
+    },
+    {
+        'Id': 2
+	    'Name': 'Sample Dog Name 2'
+	    'Owner': 'Sample Owner'
+	    'Breed': 'Sample Breed'
+	    'Friends': [
+            1,
+            3
+        ]
+    }
+]
 ```
 
 #### Error Codes
@@ -169,7 +255,16 @@ _No request body required for this endpoint._
 #### Response
 
 ```json
-{'Id': 45, 'Name': 'The Random Sample Dog's Name', 'Owner': 'Sample Owner', 'Breed': 'Sample Breed', 'Friends': [2, 3]}
+{
+    'Id': 45
+	'Name': 'The Random Sample Dog's Name'
+	'Owner': 'Sample Owner'
+	'Breed': 'Sample Breed'
+	'Friends': [
+        2,
+	    3
+    ]
+}
 ```
 
 #### Error Codes
@@ -190,7 +285,16 @@ _No request body required for this endpoint._
 #### Response
 
 ```json
-{'Id': 1, 'Name': 'Sample Dog Name', 'Owner': 'Sample Owner', 'Breed': 'Sample Breed', 'Friends': [2, 3]}
+{
+    'Id': 1
+	'Name': 'Sample Dog Name'
+	'Owner': 'Sample Owner'
+	'Breed': 'Sample Breed'
+	'Friends': [
+        2,
+    	3
+    ]
+}
 ```
 
 #### Error Codes
@@ -208,13 +312,31 @@ _No request body required for this endpoint._
 #### Request Example
 
 ```json
-{'Name': 'Example Dog Name', 'Owner': 'Example Owner', 'Breed': 'Example Breed', 'Friends': [2, 3, 4]}
+{
+    'Name': 'Example Dog Name'
+	'Owner': 'Example Owner'
+	'Breed': 'Example Breed'
+	'Friends': [
+        2,
+	    3,
+    	4
+    ]
+}
 ```
 
 #### Response
 
 ```json
-{'Name': 'Example Dog Name', 'Owner': 'Example Owner', 'Breed': 'Example Breed', 'Friends': [2, 3, 4]}
+{
+    'Name': 'Example Dog Name'
+	'Owner': 'Example Owner'
+	'Breed': 'Example Breed'
+	'Friends': [
+        2,
+	    3,
+	    4
+    ]
+}
 ```
 
 #### Error Codes
@@ -231,13 +353,31 @@ _No request body required for this endpoint._
 #### Request Example
 
 ```json
-{'Name': 'Example Dog Name', 'Owner': 'Example Owner', 'Breed': 'Example Breed', 'Friends': [2, 3, 4]}
+{
+    'Name': 'Example Dog Name'
+	'Owner': 'Example Owner'
+	'Breed': 'Example Breed'
+	'Friends': [
+        2,
+	    3,
+	    4
+    ]
+}
 ```
 
 #### Response
 
 ```json
-{'Name': 'Example Dog Name', 'Owner': 'Example Owner', 'Breed': 'Example Breed', 'Friends': [2, 3, 4]}
+{
+    'Name': 'Example Dog Name'
+	'Owner': 'Example Owner'
+	'Breed': 'Example Breed'
+	'Friends': [
+        2,
+	    3,
+	    4
+    ]
+}
 ```
 
 #### Error Codes
@@ -259,7 +399,16 @@ _No request body required for this endpoint._
 #### Response
 
 ```json
-{'Id': 1, 'Name': 'Sample Dog Name', 'Owner': 'Sample Owner', 'Breed': 'Sample Breed', 'Friends': [2, 3]}
+{
+    'Id': 1
+	'Name': 'Sample Dog Name'
+	'Owner': 'Sample Owner'
+	'Breed': 'Sample Breed'
+	'Friends': [
+        2,
+	    3
+    ]   
+}
 ```
 
 #### Error Codes
