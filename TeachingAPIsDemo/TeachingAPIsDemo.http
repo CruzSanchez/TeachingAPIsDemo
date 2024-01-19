@@ -1,6 +1,95 @@
 @TeachingAPIsDemo_HostAddress = http://localhost:5164
 
-GET {{TeachingAPIsDemo_HostAddress}}/weatherforecast/
+GET {{TeachingAPIsDemo_HostAddress}}/books/
 Accept: application/json
+###
 
+GET {{TeachingAPIsDemo_HostAddress}}/book/5
+Accept: application/json
+###
+
+GET {{TeachingAPIsDemo_HostAddress}}/book/random
+Accept: application/json
+###
+
+POST {{TeachingAPIsDemo_HostAddress}}/book
+Accept: application/json
+Content-Type: application/json
+
+{
+   "id": 1500,
+   "title": "Goodbye World",
+   "description": "This is a demo description",
+   "author": "Ted Holiday",
+   "createdDate": "1983-11-02",
+   "genre": "Sci-fi"
+}
+###
+
+PUT {{TeachingAPIsDemo_HostAddress}}/book/56
+Accept: application/json
+Content-Type: application/json
+
+{
+        "id": 1500,
+        "title": "Goodbye World",
+        "description": "This is a demo description",
+        "author": "Ted Bundy",
+        "createdDate": "1983-11-02",
+        "genre": "Sci-fi"
+}
+###
+
+DELETE {{TeachingAPIsDemo_HostAddress}}/book/50
+Accept: application/json
+###
+
+GET {{TeachingAPIsDemo_HostAddress}}/dogs
+Accept: application/json
+###
+
+GET {{TeachingAPIsDemo_HostAddress}}/dog/41
+Accept: application/json
+###
+
+GET {{TeachingAPIsDemo_HostAddress}}/dog/random
+Accept: application/json
+###
+
+POST {{TeachingAPIsDemo_HostAddress}}/dog
+Accept: application/json
+Content-Type: application/json
+
+{
+    "id": 1500,
+    "name": "Buster 2",
+    "owner": "Demo Person",
+    "breed": "Corgi",
+    "friends": [
+        1,
+        37,
+        6
+    ]
+}
+###
+
+PUT {{TeachingAPIsDemo_HostAddress}}/dog/41
+Accept: application/json
+Content-Type: application/json
+
+{
+    "id": 1500,
+    "name": "Buster 5000",
+    "owner": "Demo Person",
+    "breed": "Corgi",
+    "friends": [
+        1,
+        37,
+        6
+    ]
+}
+###
+
+DELETE {{TeachingAPIsDemo_HostAddress}}/dog/41
+Accept: application/json
 ###
