@@ -17,22 +17,22 @@ _No request body required for this endpoint._
 
 ```yaml
 [
-    {
-        'Id': 1,
-        'Title': 'Sample Book Title',
-	    'Description': 'Sample Description',
-	    'Author': 'Sample Author',
-	    'CreatedDate': '2023-01-01',
-	    'Genre': 'Sample Genre'
-    },
-    {
-        'Id': 2,
-	    'Title': 'Sample Book Title',
-	    'Description': 'Sample Description',
-	    'Author': 'Sample Author',
-	    'CreatedDate': '2023-01-01',
-	    'Genre': 'Sample Genre'
-    }
+{
+'Id': 1,
+'Title': 'Sample Book Title',
+'Description': 'Sample Description',
+'Author': 'Sample Author',
+'CreatedDate': '2023-01-01',
+'Genre': 'Sample Genre'
+},
+{
+'Id': 2,
+'Title': 'Sample Book Title',
+'Description': 'Sample Description',
+'Author': 'Sample Author',
+'CreatedDate': '2023-01-01',
+'Genre': 'Sample Genre'
+}
 ]
 ```
 
@@ -56,12 +56,12 @@ _No request body required for this endpoint._
 
 ```yaml
 {
-    'Id': 1,
-	'Title': 'Sample Book Title',
-	'Description': 'Sample Description',
-	'Author': 'Sample Author',
-	'CreatedDate': '2023-01-01',
-	'Genre': 'Sample Genre'
+'Id': 1,
+'Title': 'Sample Book Title',
+'Description': 'Sample Description',
+'Author': 'Sample Author',
+'CreatedDate': '2023-01-01',
+'Genre': 'Sample Genre'
 }
 ```
 
