@@ -6,7 +6,7 @@ This document provides detailed information about the API endpoints defined in t
 
 ### Get /books
 
-- **HTTP Method:** Get
+- **HTTP Method:** GET
 - **Path:** `/books`
 
 #### Request Example
@@ -42,9 +42,9 @@ _No request body required for this endpoint._
 - **400 Bad Request:** The server could not understand the request due to invalid syntax.
 - **404 Not Found:** The server can not find the requested resource.
 
-### Get /book/{id}
+### Get /book/<code style="color : Fuchsia">{id}</code>
 
-- **HTTP Method:** Get
+- **HTTP Method:** GET
 - **Path:** `/book/{id}`
 - **Parameters:** `int id`
 
@@ -74,7 +74,7 @@ _No request body required for this endpoint._
 
 ### Get /book/random
 
-- **HTTP Method:** Get
+- **HTTP Method:** GET
 - **Path:** `/book/random`
 
 #### Request Example
@@ -102,7 +102,7 @@ _No request body required for this endpoint._
 
 ### Post /book
 
-- **HTTP Method:** Post
+- **HTTP Method:** POST
 - **Path:** `/book`
 - **Parameters:** `[FromBody] Book book`
 
@@ -122,7 +122,7 @@ _No request body required for this endpoint._
 
 ```yaml
 {
-    'Id': 1
+    'Id': 5000,
 	'Title': 'Sample Book Title',
 	'Description': 'Sample Description',
 	'Author': 'Sample Author',
@@ -136,9 +136,9 @@ _No request body required for this endpoint._
 - **200 OK:** The request has succeeded.
 - **400 Bad Request:** The server could not understand the request due to invalid syntax.
 
-### Put /book/{id}
+### Put /book/<code style="color : Fuchsia">{id}</code>
 
-- **HTTP Method:** Put
+- **HTTP Method:** PUT
 - **Path:** `/book/{id}`
 - **Parameters:** `int id, [FromBody] Book book`
 
@@ -173,9 +173,9 @@ _No request body required for this endpoint._
 - **400 Bad Request:** The server could not understand the request due to invalid syntax.
 - **404 Not Found:** The server can not find the requested resource.
 
-### Delete /book/{id}
+### Delete /book/<code style="color : Fuchsia">{id}</code>
 
-- **HTTP Method:** Delete
+- **HTTP Method:** DELETE
 - **Path:** `/book/{id}`
 - **Parameters:** `int id`
 
@@ -204,7 +204,7 @@ _No request body required for this endpoint._
 
 ### Get /dogs
 
-- **HTTP Method:** Get
+- **HTTP Method:** GET
 - **Path:** `/dogs`
 
 #### Request Example
@@ -245,7 +245,7 @@ _No request body required for this endpoint._
 
 ### Get /dog/random
 
-- **HTTP Method:** Get
+- **HTTP Method:** GET
 - **Path:** `/dog/random`
 
 #### Request Example
@@ -272,9 +272,9 @@ _No request body required for this endpoint._
 - **200 OK:** The request has succeeded.
 - **400 Bad Request:** The server could not understand the request due to invalid syntax.
 
-### Get /dog/{id}
+### Get /dog/<code style="color : Fuchsia">{id}</code>
 
-- **HTTP Method:** Get
+- **HTTP Method:** GET
 - **Path:** `/dog/{id}`
 - **Parameters:** `int id`
 
@@ -305,7 +305,7 @@ _No request body required for this endpoint._
 
 ### Post /dog
 
-- **HTTP Method:** Post
+- **HTTP Method:** POST
 - **Path:** `/dog`
 - **Parameters:** `[FromBody] Dog dog`
 
@@ -328,6 +328,7 @@ _No request body required for this endpoint._
 
 ```yaml
 {
+	'Id': 5000,
     'Name': 'Example Dog Name',
 	'Owner': 'Example Owner',
 	'Breed': 'Example Breed',
@@ -344,9 +345,9 @@ _No request body required for this endpoint._
 - **200 OK:** The request has succeeded.
 - **400 Bad Request:** The server could not understand the request due to invalid syntax.
 
-### Put /dog/{id}
+### Put /dog/<code style="color : Fuchsia">{id}</code>
 
-- **HTTP Method:** Put
+- **HTTP Method:** PUT
 - **Path:** `/dog/{id}`
 - **Parameters:** `int id, [FromBody] Dog dog`
 
@@ -386,9 +387,9 @@ _No request body required for this endpoint._
 - **400 Bad Request:** The server could not understand the request due to invalid syntax.
 - **404 Not Found:** The server can not find the requested resource.
 
-### Delete /dog/{id}
+### Delete /dog/<code style="color : Fuchsia">{id}</code>
 
-- **HTTP Method:** Delete
+- **HTTP Method:** DELETE
 - **Path:** `/dog/{id}`
 - **Parameters:** `int id`
 
