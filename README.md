@@ -2,9 +2,9 @@
 
 ## Summary
 
-This document provides detailed information about the API endpoints defined in the Program.cs file of an ASP.NET Core application.
+This document provides detailed information about the API endpoints defined in this Web API application. It is recommended to view this in VS Code if you want color formatting. 
 
-### Get /books
+### <code style="color : green">Get</code> /books
 
 - **HTTP Method:** GET
 - **Path:** `/books`
@@ -38,11 +38,11 @@ _No request body required for this endpoint._
 
 #### Error Codes
 
-- **200 OK:** The request has succeeded.
-- **400 Bad Request:** The server could not understand the request due to invalid syntax.
-- **404 Not Found:** The server can not find the requested resource.
+- **<code style="color : green">200 OK:</code>** The request has succeeded.
+- **<code style="color : red">400 Bad Request:</code>** The server could not understand the request due to invalid syntax.
+- **<code style="color : red">404 Not Found:</code>** The server can not find the requested resource.
 
-### Get /book/<code style="color : Fuchsia">{id}</code>
+### <code style="color : green">Get</code> /book/<code style="color : Fuchsia">{id}</code>
 
 - **HTTP Method:** GET
 - **Path:** `/book/{id}`
@@ -67,12 +67,12 @@ _No request body required for this endpoint._
 
 #### Error Codes
 
-- **200 OK:** The request has succeeded.
-- **400 Bad Request:** The server could not understand the request due to invalid syntax.
-- **404 Not Found:** The server can not find the requested resource.
+- **<code style="color : green">200 OK:</code>** The request has succeeded.
+- **<code style="color : red">400 Bad Request:</code>** The server could not understand the request due to invalid syntax.
+- **<code style="color : red">404 Not Found:</code>** The server can not find the requested resource.
 
 
-### Get /book/random
+### <code style="color : green">Get</code> /book/random
 
 - **HTTP Method:** GET
 - **Path:** `/book/random`
@@ -96,11 +96,11 @@ _No request body required for this endpoint._
 
 #### Error Codes
 
-- **200 OK:** The request has succeeded.
-- **400 Bad Request:** The server could not understand the request due to invalid syntax.
-- **404 Not Found:** The server can not find the requested resource.
+- **<code style="color : green">200 OK:</code>** The request has succeeded.
+- **<code style="color : red">400 Bad Request:</code>** The server could not understand the request due to invalid syntax.
+- **<code style="color : red">404 Not Found:</code>** The server can not find the requested resource.
 
-### Post /book
+### <code style="color : gold">Post</code> /book
 
 - **HTTP Method:** POST
 - **Path:** `/book`
@@ -133,10 +133,10 @@ _No request body required for this endpoint._
 
 #### Error Codes
 
-- **200 OK:** The request has succeeded.
-- **400 Bad Request:** The server could not understand the request due to invalid syntax.
+- **<code style="color : green">200 OK:</code>** The request has succeeded.
+- **<code style="color : red">400 Bad Request:</code>** The server could not understand the request due to invalid syntax.
 
-### Put /book/<code style="color : Fuchsia">{id}</code>
+### <code style="color : Aqua">Put</code> /book/<code style="color : Fuchsia">{id}</code>
 
 - **HTTP Method:** PUT
 - **Path:** `/book/{id}`
@@ -169,11 +169,11 @@ _No request body required for this endpoint._
 
 #### Error Codes
 
-- **200 OK:** The request has succeeded.
-- **400 Bad Request:** The server could not understand the request due to invalid syntax.
-- **404 Not Found:** The server can not find the requested resource.
+- **<code style="color : green">200 OK:</code>** The request has succeeded.
+- **<code style="color : red">400 Bad Request:</code>** The server could not understand the request due to invalid syntax.
+- **<code style="color : red">404 Not Found:</code>** The server can not find the requested resource.
 
-### Delete /book/<code style="color : Fuchsia">{id}</code>
+### <code style="color : Red">Delete</code> /book/<code style="color : Fuchsia">{id}</code>
 
 - **HTTP Method:** DELETE
 - **Path:** `/book/{id}`
@@ -198,11 +198,11 @@ _No request body required for this endpoint._
 
 #### Error Codes
 
-- **204 No Content:** The request has succeeded and indicates that the resource has been removed but there is no message body to further describe the action or the status
-- **400 Bad Request:** The server could not understand the request due to invalid syntax.
-- **404 Not Found:** The server can not find the requested resource.
+- **<code style="color : green">204 No Content:</code>** The request has succeeded and indicates that the resource has been removed but there is no message body to further describe the action or the status
+- **<code style="color : red">400 Bad Request:</code>** The server could not understand the request due to invalid syntax.
+- **<code style="color : red">404 Not Found:</code>** The server can not find the requested resource.
 
-### Get /dogs
+### <code style="color : green">Get</code> /dogs
 
 - **HTTP Method:** GET
 - **Path:** `/dogs`
@@ -240,10 +240,10 @@ _No request body required for this endpoint._
 
 #### Error Codes
 
-- **200 OK:** The request has succeeded.
-- **400 Bad Request:** The server could not understand the request due to invalid syntax.
+- **<code style="color : green">200 OK:</code>** The request has succeeded.
+- **<code style="color : red">400 Bad Request:</code>** The server could not understand the request due to invalid syntax.
 
-### Get /dog/random
+### <code style="color : green">Get</code> /dog/random
 
 - **HTTP Method:** GET
 - **Path:** `/dog/random`
@@ -269,10 +269,10 @@ _No request body required for this endpoint._
 
 #### Error Codes
 
-- **200 OK:** The request has succeeded.
-- **400 Bad Request:** The server could not understand the request due to invalid syntax.
+- **<code style="color : green">200 OK:</code>** The request has succeeded.
+- **<code style="color : red">400 Bad Request:</code>** The server could not understand the request due to invalid syntax.
 
-### Get /dog/<code style="color : Fuchsia">{id}</code>
+### <code style="color : green">Get</code> /dog/<code style="color : Fuchsia">{id}</code>
 
 - **HTTP Method:** GET
 - **Path:** `/dog/{id}`
@@ -299,11 +299,11 @@ _No request body required for this endpoint._
 
 #### Error Codes
 
-- **200 OK:** The request has succeeded.
-- **400 Bad Request:** The server could not understand the request due to invalid syntax.
-- **404 Not Found:** The server can not find the requested resource.
+- **<code style="color : green">200 OK:</code>** The request has succeeded.
+- **<code style="color : red">400 Bad Request:</code>** The server could not understand the request due to invalid syntax.
+- **<code style="color : red">404 Not Found:</code>** The server can not find the requested resource.
 
-### Post /dog
+### <code style="color : gold">Post</code> /dog
 
 - **HTTP Method:** POST
 - **Path:** `/dog`
@@ -342,10 +342,10 @@ _No request body required for this endpoint._
 
 #### Error Codes
 
-- **200 OK:** The request has succeeded.
-- **400 Bad Request:** The server could not understand the request due to invalid syntax.
+- **<code style="color : green">200 OK:</code>** The request has succeeded.
+- **<code style="color : red">400 Bad Request:</code>** The server could not understand the request due to invalid syntax.
 
-### Put /dog/<code style="color : Fuchsia">{id}</code>
+### <code style="color : Aqua">Put</code> /dog/<code style="color : Fuchsia">{id}</code>
 
 - **HTTP Method:** PUT
 - **Path:** `/dog/{id}`
@@ -383,11 +383,11 @@ _No request body required for this endpoint._
 
 #### Error Codes
 
-- **200 OK:** The request has succeeded.
-- **400 Bad Request:** The server could not understand the request due to invalid syntax.
-- **404 Not Found:** The server can not find the requested resource.
+- **<code style="color : green">200 OK:</code>** The request has succeeded.
+- **<code style="color : red">400 Bad Request:</code>** The server could not understand the request due to invalid syntax.
+- **<code style="color : red">404 Not Found:</code>** The server can not find the requested resource.
 
-### Delete /dog/<code style="color : Fuchsia">{id}</code>
+### <code style="color : Red">Delete</code> /dog/<code style="color : Fuchsia">{id}</code>
 
 - **HTTP Method:** DELETE
 - **Path:** `/dog/{id}`
@@ -414,7 +414,7 @@ _No request body required for this endpoint._
 
 #### Error Codes
 
-- **204 No Content:** The request has succeeded and indicates that the resource has been removed but there is no message body to further describe the action or the status
-- **400 Bad Request:** The server could not understand the request due to invalid syntax.
-- **404 Not Found:** The server can not find the requested resource.
+- **<code style="color : green">204 No Content:</code>** The request has succeeded and indicates that the resource has been removed but there is no message body to further describe the action or the status
+- **<code style="color : red">400 Bad Request:</code>** The server could not understand the request due to invalid syntax.
+- **<code style="color : red">404 Not Found:</code>** The server can not find the requested resource.
 
